@@ -21,4 +21,8 @@
 {%- assign _sources = __return -%}
 <link rel="stylesheet" href="{{ _sources.font_awesome }}" >
 
+{% for dependency in page.dependencies %}
+    {% include dependency.html name=dependency %}
+{% endfor %}
+
 {%- include head/custom.html -%}
