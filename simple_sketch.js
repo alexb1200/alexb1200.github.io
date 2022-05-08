@@ -89,12 +89,23 @@ function setup() {
   background(255,255,255);
 }
 
+let s=  "You can Interact with me! Click anywhere to draw! Press left arrow to clear!"
 function draw() {
   
   
-  if(frameCount%1==0){
-    background(255,0,254);
-  }
+  
+  background(120,20,12);
+  noStroke();
+  textSize(15);
+  fill(255, 0, 255);
+  text(s,10,height-1);
+  
+ 
+  
+  
+  strokeWeight(0);
+
+  stroke(0,0,0);
 //   for(let i=0; i<system.particles.length-1; i++){
 //     let row=ceil(system.particles[i].position.y/boxsize)-1;
 //     let col=ceil(system.particles[i].position.x/boxsize)-1;
